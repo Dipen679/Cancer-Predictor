@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<style>
+			* {font-size:40px}
+		
+		</style>
+	</head>
+	<body>
+		<center>			
+			<h1> Login Page </h1>
+			<a href={{ url_for('signup') }} > New Users Click here </a>
+			<form method="POST" >		
+				<input type="text" name="un" placeholder="Enter Username" />
+				<br/><br/>		
+				<input type="password" name="pw" placeholder="Enter Password" />
+				<br/><br/>
+				<input type="submit" value="Login"  />
+			</form>
+			{{ m }}
+		</center>
+	</body>
+</html>

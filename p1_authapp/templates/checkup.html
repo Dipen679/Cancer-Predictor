@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<style>
+			* {font-size:30px}
+			.nav {background-color:black}
+			.nav a {color:white;text-decoration:None;margin:40px}
+		</style>
+	</head>
+	<body>
+		<center>
+			<div class= "nav" >
+			<a href={{ url_for('home') }} > Click to return to Home Page </a> 
+			</div>
+			<h1> Fill in the details </h1>
+			<h2> Note: </h2> 
+			<h3> (B)- Benign cancer (M)- Malignant cancer</h3> 
+			<form method="POST" >
+				<input type="number" step="any" placeholder="Enter Radius Mean" name="rm" required min="6.98" max="28.11"/>	
+				<br/><br/>		
+				<input type="number" step="any" placeholder="Enter Texture Mean" name="tm" required min="9.71" max="39.28"/>	
+				<br/><br/>
+				<input type="number" step="any" placeholder="Enter Perimeter Mean" name="pm" required min="43.79" max="188.5"/>	
+				<br/><br/>
+				<input type="number" step="any" placeholder="Enter Area Mean" name="am" required min="143.5" max="2501" />	
+				<br/><br/>
+				<input type="number" step="any" placeholder="Enter Smoothness Mean" name="sm" required min="0.05263" max="0.16344"/>	
+				<br/><br/>
+				<input type="number" step="any" placeholder="Enter Compactnes Mean" name="com" required min="0.01938" max="0.345"/>	
+				<br/><br/>
+				<input type="number" step="any" placeholder="Enter Conncavity Mean" name="conm" required min="0" max="0.4260"/>	
+				<br/><br/>
+				<input type="number" step="any" placeholder="Enter Concave Points Mean" name="concm" required min="0" max="0.201" />	
+				<br/><br/>
+				<input type="number" step="any" placeholder="Enter Symmetry Mean" name="sym" required min="0.10600" max="0.30400"/>	
+				<br/><br/>
+				<input type="number" step="any" placeholder="Enter Factional Dimension Mean" name="fdm" required min="0.0499" max="0.09744"/>	
+				<br/><br/>		
+				<input type="submit"/>
+			</form>
+			{{ m }}
+		</center>
+	</body>
+
+</html>

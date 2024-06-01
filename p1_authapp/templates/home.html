@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<style>
+			* {font-size:40px}
+			.nav {background-color:black}
+			.nav a {color:white;text-decoration:None;margin:40px}
+		</style>
+	</head>
+	<body>
+		<center>			
+			<h1> Home Page </h1>
+			<h2> Welcome {{ m }} to Cancer Predictor App By Dipen </h2>
+			<h3> This App Will show what type of Cancer you are Suffering From </h3>
+			<div class= "nav" >
+				<a href={{ url_for('checkup') }} > Click to undergo the Test </a> 
+				<a href={{ url_for('changepass') }} > Click to Change Password </a>
+			</div>
+			<br/>
+			<form method="POST" >
+				<input type="submit" value="Logout" name="btn" />
+			</form>
+
+		</center>
+	</body>
+</html>
